@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧊dyemagenta</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        body, html {
+            color: rgb(0, 100, 100);
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Cantarell';
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: darkcyan;
+            padding: 10px;
+            color: azure;
+        }
+
+        .navbar a {
+            color: azure;
+            text-decoration: none;
+            padding: 0 0.5rem;
+        }
+        .navbar img {
+            margin-right: 0px;
+            height: 20px; /* Adjust size as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+
+        input[type="text"] {
+            padding: 0.1rem;
+            font-size: 1rem;
+            border: 1px solid darkcyan;
+            background-color: azure;
+            color: rgb(0, 100, 100);
+        }
+        input[type="text"]:focus {
+            outline: none;
+        }
+        a {
+            color: #3366BB;
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+            height: calc(82vh - 100px); 
+            box-sizing: border-box;
+        }
+        @media (max-width: 1250px) {
+        .container {
+            height: calc(79vh - 100px); 
+
+        }
+        }
+
+
+        .receivers {
+            border: none;
+            padding: 10px;
+            flex-grow: 1;
+            overflow-y: auto;
+            box-sizing: border-box;
+        }
+
+        .default, .recomended {
+            padding: 15px;
+            margin-bottom: 10px;
+            adding: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .default {
+            background-color: #eee;
+
+        }
+
+        .default:hover {
+            background-color: lightgreen;
+
+        }
+        .main {
+            padding: 5px;
+        }
+        .receiver img {
+            margin-right: 10px;
+            width: 24px; /* Adjust size as needed */
+            height: 24px; /* Adjust size as needed */
+        }
+        .red {
+            color: red
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <a href="#">🧊<b>dyemagenta</b></a>
+        </div>
+        
+        <div class="navbar-links">
+            <a href="https://github.com/dyemagenta><img src="github.png" height="24"></a>
+            <a href="https://t.me/dyemagenta">
+                <img src="tg.png" height="16">
+            </a>
+           
+        </div>
+    </div>
+    <div class="main">
+        <h2><center>All activity KiwiSDR receivers</center></h2>
+        <center>We provide a list of receivers that receive military stations and more. You can also use for Autoreload by TheVeryGaming or just listen</center>
+        <br>
+        <b><center>Search <br>
+            <input type="text" id="searchInput" placeholder="" onkeyup="searchDivs()"></center></b>
+    </div>
+    <div class="container">
+        <div class="receivers">
+            <div id="error" class="hidden"><center class="red">No matching receivers found.</center></div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR 2 v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://rka.proxy.kiwisdr.com:8073/" target="_blank">
+                            http://rka.proxy.kiwisdr.com:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Laukaa, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR 1 v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://pallas-kiwi-2.ddns.net:8074/" target="_blank">
+                            http://pallas-kiwi-2.ddns.net:8074/
+                        </a>
+                    &nbsp; 
+                    <location> Lapland, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR 1 v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://oh1rj.proxy.kiwisdr.com:8073/" target="_blank">
+                            http://oh1rj.proxy.kiwisdr.com:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Turku Region, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://tredxk.no-ip.org:8073/" target="_blank">
+                            http://tredxk.no-ip.org:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Tampere, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.646 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://kiwi-kuo.aprs.fi:8073/" target="_blank">
+                            http://kiwi-kuo.aprs.fi:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Kuopio, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR 1 v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://kiwi-vih.aprs.fi:8073/" target="_blank">
+                            http://kiwi-vih.aprs.fi:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Vihti, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR 1 v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://kotisauna.psokiwi.net:8074/" target="_blank">
+                            http://kotisauna.psokiwi.net:8074/
+                        </a>
+                    &nbsp; 
+                    <location> Kotka, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR 1 v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://sdxlkiwi7.proxy.kiwisdr.com:8073/" target="_blank">
+                            http://sdxlkiwi7.proxy.kiwisdr.com:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Virrat, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.665 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://oh3aa.dy.fi:18073/" target="_blank">
+                            http://oh3aa.dy.fi:18073/
+                        </a>
+                    &nbsp; 
+                    <location> Hämeenlinna, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://pso2.p.sdrotg.com:80/" target="_blank">
+                            http://pso2.p.sdrotg.com:80/
+                        </a>
+                    &nbsp; 
+                    <location> Kotka, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://rhakiwi.ddns.net:8073/" target="_blank">
+                            http://rhakiwi.ddns.net:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Raisio, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://oh6hps.ddns.net:8073/" target="_blank">
+                            http://oh6hps.ddns.net:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Muurame, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.665 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://kareliaswdx.ddns.net:8074/" target="_blank">
+                            http://kareliaswdx.ddns.net:8074/
+                        </a>
+                    &nbsp; 
+                    <location> Joensuu, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR 1 v1.682 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://oh5ae.dyndns.org:8073/" target="_blank">
+                            http://oh5ae.dyndns.org:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Elimäki, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://21612.proxy.kiwisdr.com:8073/" target="_blank">
+                            http://21612.proxy.kiwisdr.com:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Asikkala, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://oh5liz.proxy.kiwisdr.com:8073/" target="_blank">
+                            http://oh5liz.proxy.kiwisdr.com:8073/
+                        </a>
+                    &nbsp; 
+                    <location> Kouvola, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://oh2bua.fi:8075/" target="_blank">
+                            http://oh2bua.fi:8075/
+                        </a>
+                    &nbsp; 
+                    <location> Iitti, Finland 🇫🇮</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="http://msk.swl.su:80/" target="_blank">
+                            http://msk.swl.su:80/
+                        </a>
+                    &nbsp; 
+                    <location> Moscow, Russia 🇷🇺</location>
+                </receiver>
+            </div>
+            <div class="default">
+                <img src="kiwi-with-headphones.51x67.png" width="26" title=" KiwiSDR v1.663 ">&nbsp;
+                <receiver>
+                     
+                        <a href="https://sdr.radiorubka.org/" target="_blank">
+                            https://sdr.radiorubka.org/
+                        </a>
+                    &nbsp; 
+                    <location> Tambov, Russia 🇷🇺</location>
+                </receiver>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function searchDivs() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let divs = document.querySelectorAll('.receivers > div:not(#error)');
+            let found = false;
+
+            divs.forEach(div => {
+                if (div.textContent.toLowerCase().includes(input)) {
+                    div.classList.remove('hidden');
+                    div.style.display = 'flex'; // Ensure the display is set to flex when found
+                    found = true;
+                } else {
+                    div.classList.add('hidden');
+                    div.style.display = 'none'; // Hide the element when not matching
+                }
+            });
+
+            let errorDiv = document.getElementById('error');
+            if (found) {
+                errorDiv.classList.add('hidden');
+            } else {
+                errorDiv.classList.remove('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
